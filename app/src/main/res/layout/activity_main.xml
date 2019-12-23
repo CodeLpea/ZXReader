@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自动寻卡"
+            android:onClick="auToStart"
+            />
+        <Button
+            android:id="@+id/btn_cannel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭寻卡"
+            android:onClick="stop"
+            />
+
+    </LinearLayout>
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <TextView
+          android:id="@+id/tv_status"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="当前状态："
+          />
+
+      <TextView
+          android:id="@+id/tv_data"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="读取数据："
+          />
+  </LinearLayout>
+
+</LinearLayout>
